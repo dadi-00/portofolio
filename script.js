@@ -14,3 +14,6 @@ const mobileMenu = document.getElementById("mobile-menu");
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
+
+// Script untuk mengatur tahun secara otomatis
+document.getElementById("year").textContent = new Date().getFullYear();

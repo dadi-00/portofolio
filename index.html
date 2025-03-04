@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   </head>
   <body class="bg-gradient-to-br from-black to-blue-400 text-white font-sans">
-    <nav class="fixed w-full bg-black bg-opacity-80 p-4 z-10">
+    <nav class="fixed w-full bg-black bg-opacity-80 p-4 z-20">
       <div class="container mx-auto flex justify-between items-center">
         <a href="#home" class="text-2xl font-bold text-blue-400">MyPortfolio</a>
         <div class="md:hidden">
@@ -26,7 +26,7 @@
       </div>
 
       <!-- Mobile menu -->
-      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 bg-black bg-opacity-90 p-4">
+      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 bg-opacity-90 p-4">
         <li><a href="#home" class="hover:text-blue-400">Home</a></li>
         <li><a href="#about" class="hover:text-blue-400">About</a></li>
         <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
@@ -91,12 +91,17 @@
     <section id="contact" class="h-screen flex flex-col justify-center items-center p-6">
       <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
       <div class="flex space-x-6">
-        <a href="https://facebook.com/rosyadi.aulawi.9" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dadi15122001@gmail.com" target="_blank" class="text-2xl hover:text-blue-400">
+          <i class="fas fa-envelope"></i>
+        </a>
         <a href="https://instagram.com/aulawirsyd_" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/+6281998988819" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
         <a href="https://linkedin.com/in/m-rosyadi-aulawi-833392222/" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
+    <footer class="bg-black bg-opacity-80 text-center p-4">
+      <p>&copy; <span id="year"></span> M. Rosyadi Aulawi. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
