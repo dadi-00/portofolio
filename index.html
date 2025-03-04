@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body class="bg-gradient-to-br from-black to-blue-400 text-white font-sans">
+    <nav class="fixed w-full bg-black bg-opacity-80 p-4 z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold text-blue-400">MyPortfolio</a>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <ul id="menu" class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+          <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 bg-black bg-opacity-90 p-4">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="h-screen flex items-center justify-center p-6">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div class="text-left">
+          <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+          <p class="mt-4 text-lg max-w-2xl">Hello! I’m a passionate front-end developer and UI/UX designer dedicated to creating beautiful, functional, and accessible websites.</p>
+        </div>
+        <div class="flex justify-center">
+          <div class="relative w-60 h-80 flex items-center justify-center">
+            <div class="absolute w-72 h-72 bg-black rounded-full top-24"></div>
+            <img src="img/Foto_Dadi-removebg-preview.png" alt="Your Photo" class="w-60 h-80 object-cover z-10" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saya ubah layout jadi grid dengan 2 kolom. Kiri teks, kanan foto -->
+
+    <section id="about" class="h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="max-w-3xl text-center">
+        My name is M. Rosyadi Aulawi. I have a strong background in web development, focusing on modern JavaScript frameworks like React. I also specialize in designing intuitive interfaces that enhance user experiences.
+      </p>
+    </section>
+
+    <section id="skills" class="h-screen flex flex-col justify-center items-center p-6">
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">HTML, CSS, JavaScript</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">React.js, Tailwind CSS</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">UI/UX Design, Figma</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">API Integration, Axios</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">Version Control (Git, GitHub)</li>
+      </ul>
+    </section>
+
+    <section id="services" class="h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
+      <h2 class="text-3xl font-bold mb-4">Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-bold mb-2">Web Development</h3>
+          <p>Building responsive, high-performance websites with clean and maintainable code.</p>
+        </div>
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+          <p>Designing engaging user interfaces with a focus on usability and accessibility.</p>
+        </div>
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-bold mb-2">API Integration</h3>
+          <p>Connecting web applications to external APIs for dynamic data handling and functionality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="h-screen flex flex-col justify-center items-center p-6">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <div class="flex space-x-6">
+        <a href="https://facebook.com/rosyadi.aulawi.9" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/aulawirsyd_" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/+6281998988819" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/in/m-rosyadi-aulawi-833392222/" target="_blank" class="text-2xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
