@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   </head>
   <body class="bg-gradient-to-br from-black to-blue-400 text-white font-sans">
     <nav class="fixed w-full bg-black bg-opacity-80 p-4 z-20">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="#home" class="text-2xl font-bold text-blue-400">MyPortfolio</a>
+        <a href="#home" class="text-2xl font-bold text-blue-400">M. Rosyadi Aulawi</a>
         <div class="md:hidden">
           <button id="menu-btn" class="text-white focus:outline-none">
             <i class="fas fa-bars text-2xl"></i>
@@ -20,6 +20,7 @@
           <li><a href="#home" class="hover:text-blue-400">Home</a></li>
           <li><a href="#about" class="hover:text-blue-400">About</a></li>
           <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+          <li><a href="#design" class="hover:text-blue-400">Design</a></li>
           <li><a href="#services" class="hover:text-blue-400">Services</a></li>
           <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
@@ -35,7 +36,7 @@
       </ul>
     </nav>
 
-    <section id="home" class="h-screen flex items-center justify-center p-6">
+    <section id="home" class="min-h-screen flex items-center justify-center p-6">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <div class="text-left">
           <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
@@ -52,25 +53,59 @@
 
     <!-- Saya ubah layout jadi grid dengan 2 kolom. Kiri teks, kanan foto -->
 
-    <section id="about" class="h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
       <h2 class="text-3xl font-bold mb-4">About Me</h2>
       <p class="max-w-3xl text-center">
         My name is M. Rosyadi Aulawi. I have a strong background in web development, focusing on modern JavaScript frameworks like React. I also specialize in designing intuitive interfaces that enhance user experiences.
       </p>
     </section>
 
-    <section id="skills" class="h-screen flex flex-col justify-center items-center p-6">
+    <section id="skills" class="min-h-screen flex flex-col justify-center items-center p-6">
       <h2 class="text-3xl font-bold mb-4">Skills</h2>
       <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
         <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">HTML, CSS, JavaScript</li>
         <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">React.js, Tailwind CSS</li>
         <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">UI/UX Design, Figma</li>
-        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">API Integration, Axios</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">API Integration</li>
         <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">Version Control (Git, GitHub)</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">Photo Editing</li>
+        <li class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">Logo Design</li>
       </ul>
     </section>
 
-    <section id="services" class="h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
+    <section id="design" class="min-h-screen flex flex-col justify-center items-center p-6 bg-gradient-to-br from-gray-900 to-gray-700 text-white">
+      <h2 class="text-3xl font-bold mb-6">My Designs</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Desktop - 1.png" alt="Design 1" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Landing Page</h3>
+          <p class="mt-2">A sleek and modern landing page designed for a startup.</p>
+          <button onclick="openModal('img/Desktop - 1.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Desktop - 2.png" alt="Design 2" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Mobile App UI</h3>
+          <p class="mt-2">A clean and intuitive mobile app interface with dark mode support.</p>
+          <button onclick="openModal('img/Desktop - 2.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Desktop - 4.png" alt="Design 3" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Dashboard</h3>
+          <p class="mt-2">An interactive admin dashboard with data visualization elements.</p>
+          <button onclick="openModal('img/Desktop - 4.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="imageModal" class="fixed inset-0 hidden bg-black bg-opacity-75 z-50 flex items-center justify-center">
+        <div class="relative">
+          <button onclick="closeModal()" class="absolute top-2 right-2 text-3xl text-white">&times;</button>
+          <img id="modalImage" class="max-w-full max-h-screen" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="min-h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
       <h2 class="text-3xl font-bold mb-4">Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -82,13 +117,17 @@
           <p>Designing engaging user interfaces with a focus on usability and accessibility.</p>
         </div>
         <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-bold mb-2">API Integration</h3>
-          <p>Connecting web applications to external APIs for dynamic data handling and functionality.</p>
+          <h3 class="text-xl font-bold mb-2">Photo Editing</h3>
+          <p>I offer professional photo editing services to enhance colors, lighting, and composition. With a creative touch, I can help make your photos more vibrant and captivating.</p>
+        </div>
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-bold mb-2">Logo Design</h3>
+          <p>I design logos that reflect your brand identity. By combining unique visual elements and thoughtful color choices, I create memorable logos that stand out and leave a lasting impression on your audience.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="h-screen flex flex-col justify-center items-center p-6">
+    <section id="contact" class="min-h-screen flex flex-col justify-center items-center p-6">
       <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
       <div class="flex space-x-6">
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dadi15122001@gmail.com" target="_blank" class="text-2xl hover:text-blue-400">
