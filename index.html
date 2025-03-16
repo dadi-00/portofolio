@@ -34,6 +34,7 @@
         <li><a href="#home" class="hover:text-blue-400">Home</a></li>
         <li><a href="#about" class="hover:text-blue-400">About</a></li>
         <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#design" class="hover:text-blue-400">Design</a></li>
         <li><a href="#services" class="hover:text-blue-400">Services</a></li>
         <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
       </ul>
@@ -77,28 +78,60 @@
     </section>
 
     <section id="design" class="min-h-screen flex flex-col justify-center items-center p-6 bg-gradient-to-br from-gray-900 to-gray-700 text-white">
-      <h2 class="text-3xl font-bold mb-6">Lastest Design</h2>
+      <h2 class="text-3xl font-bold mb-6">Latest Design</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <img src="img/Desktop - 1.png" alt="Design 1" class="w-full h-auto object-cover rounded-lg" />
+          <img src="img/Desktop - 1.png" alt="Landing Page" class="w-full h-auto object-cover rounded-lg" />
           <h3 class="text-xl font-bold mt-4">Landing Page</h3>
-          <p class="mt-2">A sleek and modern landing page designed for a startup.</p>
+          <p class="mt-2">A modern landing page with a sleek UI for a startup.</p>
           <button onclick="openModal('img/Desktop - 1.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
         </div>
+    
         <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <img src="img/Desktop - 2.png" alt="Design 2" class="w-full h-auto object-cover rounded-lg" />
+          <img src="img/Desktop - 2.png" alt="Home Page" class="w-full h-auto object-cover rounded-lg" />
           <h3 class="text-xl font-bold mt-4">Home Page</h3>
-          <p class="mt-2">A home page layout with interactive cards for selecting available classes.</p>
+          <p class="mt-2">An interactive homepage with engaging UI elements.</p>
           <button onclick="openModal('img/Desktop - 2.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
         </div>
+    
         <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <img src="img/Desktop - 4.png" alt="Design 3" class="w-full h-auto object-cover rounded-lg" />
-          <h3 class="text-xl font-bold mt-4">Class Material</h3>
-          <p class="mt-2">A content page displaying the selected class materials with progress tracking.</p>
+          <img src="img/Desktop - 4.png" alt="Course Dashboard" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Course Dashboard</h3>
+          <p class="mt-2">A dashboard for tracking course progress and materials.</p>
           <button onclick="openModal('img/Desktop - 4.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+    
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Login Page.png" alt="Login Page" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Login Page</h3>
+          <p class="mt-2">A user-friendly login page with clean and modern UI.</p>
+          <button onclick="openModal('img/Login Page.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+    
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Landing Page.png" alt="AkuSehat Landing Page" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Landing Page</h3>
+          <p class="mt-2">A Landing Page showcase with smooth transitions and animations.</p>
+          <button onclick="openModal('img/Landing Page.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
+        </div>
+    
+        <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/Beranda Apoteker.png" alt="Pharmacy Dashboard" class="w-full h-auto object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">Pharmacy Dashboard</h3>
+          <p class="mt-2">A web dashboard for managing pharmacy inventory and prescriptions.</p>
+          <button onclick="openModal('img/Beranda Apoteker.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">See Full</button>
         </div>
       </div>
     </section>
+    
+    <!-- Modal (pindahkan di luar section) -->
+    <div id="imageModal" class="fixed inset-0 hidden bg-black bg-opacity-75 z-50 flex items-center justify-center">
+      <div class="relative">
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-3xl text-black">&times;</button>
+        <img id="modalImage" class="max-w-full max-h-screen" />
+      </div>
+    </div>
+    
 
       <!-- Modal -->
       <div id="imageModal" class="fixed inset-0 hidden bg-black bg-opacity-75 z-50 flex items-center justify-center">
