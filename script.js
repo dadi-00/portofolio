@@ -43,11 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const text = `Informatics Engineering graduate passionate about UI/UX with a strong foundation in both design and development. Experienced in designing responsive and user-friendly web interfaces through academic research, organizational activities, and real-world projects.
+const text = `Informatics Engineering graduate with 2 years of experience in UI/UX and front-end development. Passionate about designing beautiful and user-centered digital interfaces with a strong foundation in both design and development.
+
+Experienced in designing responsive and user-friendly web interfaces through academic research, organizational activities, and real-world company projects.
 
 Proficient in Figma, Illustrator, Photoshop, Canva, and front-end tools such as HTML, CSS, Tailwind CSS, and React. Skilled in user research, design systems, and cross-functional collaboration.
 
-Motivated to create meaningful digital experiences that bridge human needs and technology. Currently seeking opportunities to contribute impactful UI/UX solutions and continue growing within a creative and collaborative environment.`;
+Motivated to create meaningful digital experiences that bridge human needs and technology.`;
 
 const typingElement = document.getElementById("typing-text");
 let index = 0;
@@ -56,7 +58,7 @@ function typeCharacter() {
   if (index < text.length) {
     typingElement.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeCharacter, 20); // Ubah angka ini untuk mengatur kecepatan
+    setTimeout(typeCharacter, 17); // Ubah angka ini untuk mengatur kecepatan
   }
 }
 
