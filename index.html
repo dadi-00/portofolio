@@ -30,7 +30,7 @@
           <li><a href="#about" class="hover:text-blue-400">About</a></li>
           <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
           <li><a href="#design" class="hover:text-blue-400">Design</a></li>
-          <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+          <li><a href="#certificates" class="hover:text-blue-400">Certificates</a></li>
           <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
       </div>
@@ -65,8 +65,8 @@
     <!-- Saya ubah layout jadi grid dengan 2 kolom. Kiri teks, kanan foto -->
 
     <section id="about" class="min-h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-<p id="typing-text" class="max-w-3xl text-center text-lg leading-relaxed whitespace-pre-line"></p>
+      <h2 class="text-3xl font-bold mb-4 font-mono">About Me</h2>
+<p id="typing-text" class="max-w-3xl text-center text-lg leading-relaxed whitespace-pre-line font-mono"></p>
 
     </section>
 
@@ -88,6 +88,12 @@
     <section id="design" class="min-h-screen flex flex-col justify-center items-center p-6 bg-gradient-to-br from-gray-900 to-gray-700 text-white">
       <h2 class="text-3xl font-bold mb-6">Latest Design</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src="img/kita-semua-id.png" alt="Kita Semua Id" class="w-full max-h-80 object-cover rounded-lg" />
+          <h3 class="text-xl font-bold mt-4">KITASEMUA.ID</h3>
+          <p class="mt-2">Homepage redesign request for KITASEMUA.ID based on company's needs</p>
+          <button onclick="openModal('img/kita-semua-id.png')" class="mt-4 px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">View Full Image</button>
+        </div>
         <div class="p-4 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
           <img src="img/KI HAJAR DEWANTARA.jpg" alt="Education Day 2025" class="w-full max-h-80 object-cover rounded-lg" />
           <h3 class="text-xl font-bold mt-4">Education's Day 2025 Poster Card</h3>
@@ -162,27 +168,32 @@
       </div>
     </section>
 
-    <section id="services" class="min-h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
-      <h2 class="text-3xl font-bold mb-4">Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<section id="certificates" class="min-h-screen flex flex-col justify-center items-center p-6 bg-white text-black">
+  <h2 class="text-3xl font-bold mb-4">Certificates</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <h3 class="text-xl font-bold mb-2">Front-End Developer</h3>
+      <p class="mb-2">Certificate for completing Front-End Web Development course.</p>
+      <a href="https://www.dicoding.com/certificates/81P231588XOY" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+    </div>
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+      <p class="mb-2">Certificate for completing UI/UX Design Fundamentals.</p>
+      <a href="#" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+    </div>
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <h3 class="text-xl font-bold mb-2">JavaScript Programming</h3>
+      <p class="mb-2">Certificate for mastering JavaScript basics to intermediate level.</p>
+      <a href="https://www.dicoding.com/certificates/EYX4G44L6ZDL" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+    </div>
         <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-bold mb-2">Web Development</h3>
-          <p>I create responsive, high-performance websites with clean and maintainable code, tailored to meet your specific needs and deliver a seamless user experience.</p>
-        </div>
-        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
-          <p>I design intuitive and visually appealing interfaces, focusing on usability and accessibility to ensure your platform is easy and enjoyable to navigate.</p>
-        </div>
-        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-bold mb-2">Photo Editing</h3>
-          <p>I provide professional photo editing services to enhance colors, lighting, and composition. With a creative touch, I bring your photos to life, making them more vibrant and captivating.</p>
-        </div>
-        <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-bold mb-2">Logo Design</h3>
-          <p>I craft unique and impactful logos that reflect your brand identity. Through thoughtful design and strategic color choices, I create logos that leave a lasting impression.</p>
-        </div>
-      </div>
-    </section>
+      <h3 class="text-xl font-bold mb-2">Back-End Developer</h3>
+      <p class="mb-2">Certificate for completing Back-End Development training and mastering server-side fundamentals.</p>
+      <a href="https://www.dicoding.com/certificates/72ZD5421LZYW" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+    </div>
+  </div>
+</section>
+
     
     
 
