@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const text = `Informatics Engineering graduate with 2 years of experience in UI/UX and front-end development. Passionate about designing beautiful and user-centered digital interfaces with a strong foundation in both design and development.
+const text = `Informatics Engineering graduate with 1 years of experience in UI/UX and front-end development. Passionate about designing beautiful and user-centered digital interfaces with a strong foundation in both design and development.
 
 Experienced in designing responsive and user-friendly web interfaces through academic research, organizational activities, and real-world company projects.
 
